@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bela's 20th Birthday 🎀</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@500;700;900&family=Fredoka:wght@500;700&family=Anton&family=Playfair+Display:ital,wght@0,700;1,700&family=Great+Vibes&family=Tajawal:wght@500;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+
+    <!-- الأغنية -->
+    <audio id="scene2-music" loop>
+        <source src="music-new.mpeg" type="audio/mpeg">
+    </audio>
+
+    <!-- الحاوية بتاعة الإيموجي اللي بتطير -->
+    <div id="global-floating-elements"></div>
+
+    <!-- المشهد الأول -->
+    <section id="scene1" class="scene active">
+        <div class="main-content">
+            <div class="video-container">
+                <video id="our-video" src="our-video.mp4" autoplay loop playsinline></video>
+            </div>
+            
+            <h1 class="cute-title">Warning! <img src="https://em-content.zobj.net/source/apple/354/warning_26a0-fe0f.png" class="apple-emoji"></h1>
+            <p class="arabic-text">
+                الدخول لهذا الموقع قد يسبب:<br>
+                سعادة زائدة، ودموع غير متوقعة، <br>
+                وكل ده فدا عيونك وضحتك الحلوين.
+            </p>
+            
+            <div class="english-text">
+                Ready to be amazed <img src="https://em-content.zobj.net/source/apple/354/smiling-face-with-heart-eyes_1f60d.png" class="apple-emoji"> <span dir="ltr">?</span>
+            </div>
+            <div class="buttons-wrapper">
+                <button id="yes-btn" class="action-btn yes-btn">Yes <img src="https://em-content.zobj.net/source/apple/354/sparkling-heart_1f496.png" class="apple-emoji-btn"></button>
+                <button id="no-btn" class="action-btn no-btn">No <img src="https://em-content.zobj.net/source/apple/354/woman-raising-hand_1f64b-200d-2640-fe0f.png" class="apple-emoji-btn"></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- المشهد الثاني -->
+    <section id="scene2" class="scene">
+        <div class="bunting">
+            <span>🔻</span><span>🔻</span><span>🔻</span><span>🔻</span><span>🔻</span><span>🔻</span><span>🔻</span><span>🔻</span><span>🔻</span><span>🔻</span>
+        </div>
+
+        <div class="scene2-wrapper">
+            <div class="top-section">
+                <div class="image-side">
+                    <img src="bela-new.png" alt="Bela Baby" class="bela-float-img">
+                </div>
+                <div class="text-side">
+                    <h2 class="typed-eng-text">
+                        <span class="word">Happy</span>
+                        <span class="word">Birthday,</span>
+                        <span class="word">My</span>
+                        <span class="word">Everything</span>
+                    </h2>
+                </div>
+            </div>
+
+            <div class="bottom-section">
+                <div class="letter-card">
+                    <p class="ar-quote">
+                        أنا حبيبتي كبرت وكلت الجو فعلا <img src="https://em-content.zobj.net/source/apple/354/party-popper_1f389.png" class="apple-emoji-inline"> <br>
+                        كل سنة وانتي طيبة يعمريييي <img src="https://em-content.zobj.net/source/apple/354/heart-eyes_1f60d.png" class="apple-emoji-inline"> <img src="https://em-content.zobj.net/source/apple/354/heart-eyes_1f60d.png" class="apple-emoji-inline"> <br>
+                        كل سنه وانتي منوره حياتي ومحلياها بوجودك فيها <img src="https://em-content.zobj.net/source/apple/354/heart-with-ribbon_1f49d.png" class="apple-emoji-inline"> <br>
+                        كل سنه وانتي اغلي واحلي وانضف حد دخل حياتي <img src="https://em-content.zobj.net/source/apple/354/two-women-holding-hands_1f46d.png" class="apple-emoji-inline"> <img src="https://em-content.zobj.net/source/apple/354/face-holding-back-tears_1f979.png" class="apple-emoji-inline"> <br>
+                        كل سنه وانتي محققه كل الي نفسك فيه ي اغلي انجينيرنجج فحياتيي <img src="https://em-content.zobj.net/source/apple/354/zany-face_1f92a.png" class="apple-emoji-inline"> <br>
+                        كل سنه وانتي عوضي عن كل حاجه وحشه حصلتلي فحياتي <img src="https://em-content.zobj.net/source/apple/354/crossed-fingers_1f91e.png" class="apple-emoji-inline"> <img src="https://em-content.zobj.net/source/apple/354/globe-showing-africa-europe_1f30d.png" class="apple-emoji-inline"> <br>
+                        ربنا يوفقك فالي جايي ويكرمك علشان انتي تستاهلي كل الخير والحاجات الحلوه الي فالدنيا دي <img src="https://em-content.zobj.net/source/apple/354/red-heart_2764-fe0f.png" class="apple-emoji-inline"> <br>
+                        عقبال سنين كتير حلوه فحياتك وانتي وسط كل الي بتحبيهم ومحققه كل أحلامك الي أنا واثقه انك هتحققيهم علشان انتي قدها وقدود يصحبيتييي <img src="https://em-content.zobj.net/source/apple/354/zany-face_1f92a.png" class="apple-emoji-inline"> <img src="https://em-content.zobj.net/source/apple/354/face-with-tears-of-joy_1f602.png" class="apple-emoji-inline"> <img src="https://em-content.zobj.net/source/apple/354/red-heart_2764-fe0f.png" class="apple-emoji-inline"> <br>
+                        احلي 20 سنة فحياتنا كلنا ويبخت الي انتي فحياتو أصلا <img src="https://em-content.zobj.net/source/apple/354/heart-eyes_1f60d.png" class="apple-emoji-inline"> <img src="https://em-content.zobj.net/source/apple/354/heart-with-ribbon_1f49d.png" class="apple-emoji-inline">
+                    </p>
+                </div>
+
+                <button id="next-scene-btn" class="action-btn next-btn">Open Our Memories <img src="https://em-content.zobj.net/source/apple/354/camera-with-flash_1f4f8.png" class="apple-emoji-btn"></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- المشهد الثالث -->
+    <section id="scene3" class="scene">
+        <div class="creative-layout">
+            <div class="video-side">
+                <video id="memory-video" src="video1.mp4" controls playsinline></video>
+            </div>
+            <div class="story-text-container">
+                <p class="story-line">لو كان حد جه قالي بيلا هتبقا الماضي والحاضر بتاعك، عمري م كنت أصدق..</p>
+                <p class="story-line">بس دلوقتي مش بس مصدقة، لا دا أنا عايشة.. عايشة وبفتكر كل لحظة بينا من يوم ما عرفتك.</p>
+                <p class="story-line">انتي مخليّة الضحكة متفارقش وشي، ومخلياني مرتاحة..</p>
+                <p class="story-line">انتي الشخص الوحيد اللي بتمنى منساش أي لحظة بينا، ممتنة للكلية والظروف اللي خلتنا نوصل لهنا بجد.</p>
+                <p class="story-line">وكل ساوند هتسمعيه دا بيتكلم عنك بجد..</p>
+                <p class="story-line">انتي حياتي وقدوتي، انتي كل حاجة حلوة في حياتي.</p>
+                <p class="story-line">انتي الحكاية اللي هبقى فخورة بنفسي أوي وأنا بحكيها، لأني هكون بتكلم عن أسعد لحظات حياتي.. بتكلم عن حياة سوية بجد.</p>
+                <p class="story-line">الحاجات دي عمرها ما تبقى مجرد ذكريات وراحت، كل موقف وكل ضحكة ولا كلمة ولا حاجة بينا عمرها ما بتتنسى. 
+                    <img src="https://em-content.zobj.net/source/apple/354/face-holding-back-tears_1f979.png" class="apple-emoji-inline">
+                    <img src="https://em-content.zobj.net/source/apple/354/heart-with-ribbon_1f49d.png" class="apple-emoji-inline">
+                </p>
+            </div>
+        </div>
+        <button id="next-to-scene4" class="action-btn next-btn">Our Story Continues <img src="https://em-content.zobj.net/source/apple/354/next-track-button_23ed-fe0f.png" class="apple-emoji-btn"></button>
+    </section>
+
+    <!-- المشهد الرابع -->
+    <section id="scene4" class="scene">
+        <div class="scene4-layout">
+            <div class="magazine-message">
+                <p class="long-message">
+                    مبسوطة أوي إننا وصلنا للمرحلة دي سوا، مبسوطة إنك معايا ومنوّرة حياتي، وإنك دايمًا جنبي في الحلوة والمُرّة، وفي ضهري وبتشجعيني على كل خطوة صح باخدها في حياتي. <img src="https://em-content.zobj.net/source/apple/354/face-holding-back-tears_1f979.png" class="apple-emoji-inline"> <img src="https://em-content.zobj.net/source/apple/354/red-heart_2764-fe0f.png" class="apple-emoji-inline">
+                </p>
+                <p class="long-message">
+                    مهما أكتب عنك، عمري ما هحس إن الكلام وفّى حقك. إنتِ بجد من أجمل وأجدع وأنضف الناس اللي دخلوا حياتي، وكل اللي أقدر أقولهولك هو شكرًا.
+                </p>
+                <p class="long-message">
+                    شكرًا على كل مرة كنتي فيها مصدر دعم وقوة ليا، شكرًا على كل مرة ادتيني فيها طاقة أكمل، وشكرا على كل مرة طمنتيني وهوّنتي عليا كل حاجة وشكرًا على إنك موجودة في حياتي أصلًا. <img src="https://em-content.zobj.net/source/apple/354/face-holding-back-tears_1f979.png" class="apple-emoji-inline">
+                </p>
+                <p class="long-message">
+                    يمكن إنتِ متعرفيش قد إيه كلامك بيفرق معايا، وقد إيه وجودك جنبي بيخليني أحس بأمان ، بس أنا بجد ممتنة لكل لحظة كنتي فيها جنبي، ولكل مرة حسستيني إني مش لوحدي.
+                </p>
+                <p class="long-message">
+                    أنا لو هحكي عنك، بجد هحتاج أكتب فيكي أشعار؛ لأنك بالنسبالي مش مجرد صاحبة، إنتِ أختي وامي ودنيتي كلها انتي كلّ حاجه فعلا، انتي وجودك في حياتي نعمة بحمد ربنا عليها. <img src="https://em-content.zobj.net/source/apple/354/red-heart_2764-fe0f.png" class="apple-emoji-inline">
+                </p>
+                <p class="long-message">
+                    ويا رب أفضل أشوفك مبسوطة وناجحة ومحققة كل اللي نفسك فيه، وأفضل جنبك في كل خطوة، أفرحلك من قلبي وأشجعك زي ما بتعملي معايا، ومهما قابلت ناس في حياتي، أحب أفكرك إن بيلا واحدة بس، ومفيش منها اتنين أصلًا <img src="https://em-content.zobj.net/source/apple/354/zany-face_1f92a.png" class="apple-emoji-inline"> <img src="https://em-content.zobj.net/source/apple/354/red-heart_2764-fe0f.png" class="apple-emoji-inline"> <img src="https://em-content.zobj.net/source/apple/354/globe-showing-africa-europe_1f30d.png" class="apple-emoji-inline">
+                </p>
+            </div>
+
+            <div class="funny-video-side">
+                <video id="funny-video" src="video2.mp4" controls playsinline></video>
+            </div>
+        </div>
+
+        <div id="final-teaser">
+            <h2 class="teaser-text">And now... my favorite chapter ♡ <img src="https://em-content.zobj.net/source/apple/354/heart-eyes_1f60d.png" class="apple-emoji"></h2>
+            
+            <div id="ready-and-buttons">
+                <h3 class="ready-text" id="ready-word"></h3>
+                
+                <div class="buttons-wrapper hidden" id="teaser-buttons">
+                    <button id="next-to-scene5" class="action-btn yes-btn">Yes <img src="https://em-content.zobj.net/source/apple/354/sparkling-heart_1f496.png" class="apple-emoji-btn"></button>
+                    <button id="final-no-btn" class="action-btn no-btn">No <img src="https://em-content.zobj.net/source/apple/354/woman-raising-hand_1f64b-200d-2640-fe0f.png" class="apple-emoji-btn"></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- المشهد الخامس (المسجات) -->
+    <section id="scene5" class="scene">
+        <div class="creative-layout">
+            <div class="video-side">
+                <video id="messages-video" src="video3.mp4" controls playsinline></video>
+            </div>
+            
+            <div class="story-text-container">
+                <p class="story-line">إن كل ساوند بيتكلم عنك إنتِ بجد 🥹❤️</p>
+                <p class="story-line">أحن بني آدمة شوفتها في حياتي، إنتِ أحن عليا من نفسي، ومش عارفة بجد لو مكنتيش في حياتي كنت عملت إيه، ولا كنت هقدر أعدّي كل اللي عديت بيه إزاي.</p>
+                <p class="story-line">بكلامك، وأفعالك، ووقفتك جنبي في عز احتياجي لحد يخليني أرجع أقف على رجلي تاني، كنتِ دايمًا موجودة، حتى في الوقت اللي إنتِ نفسك كنتِ محتاجة فيه حد يكون معاكي. كنتِ دايمًا سمعاني، وإنتِ محتاجة اللي يسمعك، وبتحاولي تهوني عليا كل حاجة حتى لو الدنيا كانت تقيلة عليكي إنتِ كمان.</p>
+                <p class="story-line">عمري ما هنسى إنك كنتِ بتلاحظيني من صوتي وشكلي حتى وأنا بحاول أخبي إني مضايقة، ولا إنك كنتِ بتفضلّي تسأليني مالك لحد ما أتكلم. ولا كلامك اللي كان بيخليني أشوف نفسي أحسن، وأحب نفسي أكتر، وأحس إنّي فعلًا أستاهل كل حاجة حلوة.</p>
+                <p class="story-line">إنتِ مش بس كنتِ جنبي في وقت صعب، إنتِ خلتيني أحس إني مش لوحدي، وإن فيه حد في ضهري دايمًا، وإن ليا ملجأ آمن في حياتي أرجعله لما الدنيا تضيق بيا. كنتِ بتخليني أشوف كل حاجة بإيجابية، وتفرحي بأبسط خطوة أخطيها.</p>
+                <p class="story-line">أنا ممتنة لوجودك في حياتي أكتر مما تتخيلي، ونفسي أكون ليكي زي ما إنتِ كنتِ ليا، ونفسي عمرك ما تحسي إنك لوحدك أو إن مفيش حد فاهمك. عايزاكي تعرفي إنك مهما احتجتي هتلاقيني جنبك.</p>
+                <p class="story-line">شكرًا على كل مكالمة، وكل رسالة، وكل كلمة حلوة، وكل مرة كنتِ فيها جنبي، وكل مرة كنتِ فيها فخورة بيا حتى وأنا مش فخورة بنفسي. شكرًا إنك كنتِ بتلاحظيني، وبتفتقديني، وبتسأليني، وبتفرحي بيا، وبتحبيني بالطريقة اللي خلتني أحس إنّي فعلًا غالية.</p>
+                <p class="story-line">إنك تساعديني أرجع أحب نفسي، وأشوف قيمتي، وأفهم إنّي مش لازم أعمل المستحيل عشان أتحب. ودي حاجة عمري ما هقدر أنساها أو أوفيكي حقها.</p>
+                <p class="story-line">ربنا يخليكي ليا يا عمري، ويعوضك عن كل حاجة وحشة شوفتيها بكل الخير والحب اللي تستاهليهم، ويخليني أشوفك دايمًا مبسوطة وناجحة ومحققة كل اللي نفسك فيه.</p>
+                <p class="story-line">بحبك أوي ي بيلا، ومهما قلتلك مش هعرف أوصفلك إنتِ بالنسبالي إيه، بس يكفيني إنك تعرفي إن وجودك في حياتي من أجمل النعم اللي ربنا رزقني بيها، وإنّي هفضل طول عمري ممتنة إني عرفتك. ❤️🌏</p>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
